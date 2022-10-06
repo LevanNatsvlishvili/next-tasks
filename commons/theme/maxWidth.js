@@ -1,0 +1,32 @@
+const maxWidth = {
+  '40-0': '40rem',
+  '44-7': '44.7rem',
+  '125-2': '125.2rem',
+  '10-percent': '10%',
+  '20-percent': '20%',
+  '30-percent': '30%',
+  '34-percent': '34%',
+  '37-percent': '37%',
+  '40-percent': '40%',
+  '48-percent': '48%',
+  '50-percent': '50%',
+  '56-percent': '56%',
+  '58-percent': '58%',
+  '60-percent': '60%',
+  '66-percent': '66%',
+  '70-percent': '70%',
+  '75-percent': '75%',
+  '80-percent': '80%',
+  '85-percent': '85%',
+  '90-percent': '90%',
+  '100-percent': '100%',
+  'fit-content': 'fit-content',
+  '100-vw': '100vw',
+  '17-0': '17rem',
+  '22-0': '22rem',
+  '105-8': '105.8rem',
+  '109-0': '109.0rem',
+  '124-0': '124.0rem'
+};
+
+module.exports = maxWidth;

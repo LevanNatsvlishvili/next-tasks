@@ -1,0 +1,71 @@
+:root {
+  --grey: '#5F6579';
+  --blue: '#fff';
+}
+
+// React Calendar
+.react-datepicker {
+  height: 365px;
+  width: 299px;
+
+  &__triangle {
+    display: none;
+  }
+  &__month-container {
+    width: 100%;
+    height: 100%;
+  }
+  &__header {
+    height: 7.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px !important;
+    background: #fff !important;
+    border: none !important;
+  }
+  &__nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 1.6rem;
+  }
+  &__day-names {
+    display: flex;
+    margin-top: 3.6rem;
+  }
+  &__day-name {
+    color: #5f6579 !important;
+    font-size: 1.2rem !important;
+    line-height: 1.4rem !important;
+    min-width: 40px;
+    margin: 0 !important;
+  }
+  &__month {
+    padding: 0 10px !important;
+    height: 100%;
+    margin: 0 !important;
+    margin-top: 2.4rem !important;
+  }
+  &__week {
+    margin: auto !important;
+    display: flex;
+  }
+  &__day {
+    margin: auto !important;
+    min-width: 40px;
+    height: 40px !important;
+    width: 40px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #5f6579;
+    &--selected {
+      background-color: #5f6579;
+    }
+  }
+}
