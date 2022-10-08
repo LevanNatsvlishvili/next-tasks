@@ -17,8 +17,6 @@ const CustomHeader = ({
   prevMonthButtonDisabled,
   nextMonthButtonDisabled,
 }: customHeaderProps) => {
-  console.log(locale.localize?.months(4));
-
   return (
     <div className="flex !bg-white justify-between px-1-0 react-datepicker__nav">
       <button onClick={decreaseMonth} disabled={prevMonthButtonDisabled}>
@@ -39,7 +37,9 @@ const CustomHeader = ({
       </button>
 
       <div className="text-1-4 leading-1-7 font-600 text-blue-dark">
+        {/* @ts-ignore: '*/}
         {locale?.localize?.months(dayjs(date)['$M'])}
+        {/* @ts-ignore: '*/}
         <span className=""> {dayjs(date)['$y']}</span>
       </div>
 
