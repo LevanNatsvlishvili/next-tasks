@@ -69,3 +69,22 @@
     }
   }
 }
+
+// Cropper
+.cropper-view-box {
+  border-radius: 50%;
+}
+.cropper-face {
+  background-color: inherit !important;
+}
+.cropper-modal {
+  background-color: #fff !important;
+}
+.cropper-view-box {
+  outline: none !important;
+}
+.cropper-line,
+.cropper-point {
+  background-color: #fff !important;
+  position: relative !important ;
+}

@@ -10,12 +10,15 @@
   },
   "dependencies": {
     "@types/react-datepicker": "^4.4.2",
+    "cropperjs": "^1.5.12",
     "dayjs": "^1.11.5",
     "next": "12.3.1",
+    "rc-slider": "^10.0.1",
     "react": "18.2.0",
-    "react-calendar": "^3.9.0",
+    "react-cropper": "^2.1.8",
     "react-datepicker": "^4.8.0",
     "react-dom": "18.2.0",
+    "react-image-crop": "^10.0.8",
     "react-localization": "^1.0.19",
     "sass": "^1.55.0"
   },
