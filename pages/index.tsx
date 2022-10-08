@@ -1,19 +1,16 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Calendar from 'components/Calendar';
 import Datepicker from 'components/Datepicker';
 import Cropper from 'components/Cropper';
-import CropperV2 from 'components/CropperV2';
-import { useRef, useState } from 'react';
-// import Flatpicker from 'components/Flatpicker';
+import { useState } from 'react';
+import Image from 'next/image';
 
 const Home: NextPage = () => {
-  const [croppedImg, setCroppedImg] = useState<any>();
-  const [open, setOpen] = useState<boolean>(false);
-  const [img, setImg] = useState<string>('/images/profile.png');
-  const [baseImg, setBaseImg] = useState<string>('/images/profile.png');
+  const [img, setImg] = useState('/images/test.jpg');
 
-  console.log(img);
+  const handleImg = (newVal: string): void => {
+    setImg(newVal);
+  };
 
   return (
     <div>
@@ -28,21 +25,21 @@ const Home: NextPage = () => {
           <p className="mb-2-0">Datepicker</p>
           <Datepicker />
         </div>
+
         <div className="mt-2-0">
-          <p className="mb-2-0">Cropper</p>
-          <Cropper />
-        </div>
-        <div className="mt-2-0">
-          <p className="mb-2-0">Cropper v2</p>
-          <CropperV2
-            img={img}
-            setImg={setImg}
-            baseImg={baseImg}
-            setBaseImg={setBaseImg}
-          />
+          <p className="mb-2-0">Cropper </p>
+          <Cropper img={img} handleImg={handleImg} />
           <div className="rounded-50-percent overflow-hidden w-fit my-5-0 mx-3-0">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={img ? img : baseImg} alt="" />
+            <div className="h-36-0 w-36-0">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <Image
+                src={img}
+                alt=""
+                layout="responsive"
+                width="100%"
+                height="100%"
+              />
+            </div>
           </div>
         </div>
       </main>
